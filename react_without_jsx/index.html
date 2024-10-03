@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root">
+        <h1>Hello World</h1>
+    </div>
+    <div id="js-root"></div>
+    <div id="react-root"></div>
+
+    <!-- React CDN links -->
+    <!-- React -->
+     <!-- Cross origin is used to prevent CORS errors -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- React DOM -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- <script>
+        // JavaScript Hello World
+        const jsHeading = document.createElement('h1');
+        jsHeading.innerHTML = '<h2>Hello World from js</h2>';
+        jsHeading.className = 'heading';
+        document.getElementById('js-root').appendChild(jsHeading);
+
+        // React Hello World
+        const container = document.getElementById('react-root');
+        // React needs a root element to render into
+        const root = ReactDOM.createRoot(container);
+        const element = React.createElement('h1', {"id": "react-heading", "class": "heading"}, 'Hello World from React');
+        const element2 = React.createElement('h2', {}, 'Hello World Sub Heading from React');
+        // render takes 2 args: what to render, where to render it
+        root.render([element, element2], container);
+    </script> -->
+
+    <script src="app.js"></script>
+</div>
+</body>
+</html>
